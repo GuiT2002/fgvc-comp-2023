@@ -40,7 +40,7 @@ def download_imgs(imgs, outdir=None):
 
     flag = 0  # keep track of how many image downloaded
 
-    for name, url in progressbar.progressbar(imgs):
+    for name, url in imgs:
         file_name = os.path.join(
             outdir, name
         )
